@@ -14,7 +14,6 @@ whitenoise = "*"
 gunicorn = "*"
 dj-database-url = "*"
 wheel = "*"
-mysqlclient = "*"
 
 [dev-packages]
 pytest = "*"
