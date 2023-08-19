@@ -19,12 +19,10 @@ idna==3.4 ; python_version >= '3.5'
 inflection==0.5.1 ; python_version >= '3.5'
 jsonschema==4.19.0 ; python_version >= '3.8'
 jsonschema-specifications==2023.7.1 ; python_version >= '3.8'
-mysql-connector-python==8.1.0
-mysqlclient==2.2.0
 oauthlib==3.2.2 ; python_version >= '3.6'
 packaging==23.1 ; python_version >= '3.7'
 pillow==10.0.0
-protobuf==4.21.12 ; python_version >= '3.7'
+psycopg2-binary==2.9.7
 pycparser==2.21
 pyjwt==2.8.0 ; python_version >= '3.7'
 python3-openid==3.2.0
