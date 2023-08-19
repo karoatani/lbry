@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn lbry.wsgi --log-file -
+web: python manage.py collectstatic --noinput && gunicorn lbry.wsgi --log-file -
