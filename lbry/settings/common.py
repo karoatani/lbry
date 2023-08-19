@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleWare',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -72,20 +72,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'lbry.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'testing',
-        'USER': 'root',
-        'PASSWORD': 'babe',
-        'HOST':'localhost',
-        'PORT':'3306',
-    }
-}
 
 
 # Password validation
@@ -146,6 +132,7 @@ SPECTACULAR_SETTINGS = {
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
+    
     "formatters": {
         "verbose": {
             "format": "{levelname} {asctime} {module} {process:d} {thread:d} {message}",
@@ -156,29 +143,21 @@ LOGGING = {
             "style": "{",
         },
     },
-    "filters": {
-        "special": {
-            "()": "project.logging.SpecialFilter",
-            "foo": "bar",
-        },
-        "require_debug_true": {
-            "()": "django.utils.log.RequireDebugTrue",
-        },
-    },
+    
     "handlers": {
         "console": {
             "level": "INFO",
-            "filters": ["require_debug_true"],
             "class": "logging.StreamHandler",
             "formatter": "simple",
         },
         "file": {
-            'class': 'logging.Filehandler',
+            "class": 'logging.FileHandler',
             'filename': 'general.log'
-        }
+        },
     },
+    
     "loggers": {
-        " ": {
+        "": {
             "handlers": ["console"],
             "propagate": True,
         },

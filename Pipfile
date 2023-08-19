@@ -13,6 +13,7 @@ mysqlclient = "*"
 drf-spectacular = "*"
 whitenoise = "*"
 gunicorn = "*"
+dj-database-url = "*"
 
 [dev-packages]
 pytest = "*"
