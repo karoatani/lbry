@@ -20,6 +20,7 @@ psycopg2-binary = "*"
 pytest = "*"
 pytest-django = "*"
 model-bakery = "*"
+mysqlclient = "*"
 
 [requires]
 python_version = "3.11"
