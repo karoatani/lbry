@@ -14,6 +14,7 @@ drf-spectacular = "*"
 whitenoise = "*"
 gunicorn = "*"
 dj-database-url = "*"
+mysql-client = "*"
 
 [dev-packages]
 pytest = "*"
