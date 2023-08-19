@@ -14,8 +14,7 @@ whitenoise = "*"
 gunicorn = "*"
 dj-database-url = "*"
 wheel = "*"
-mysql-connector-python = "*"
-mysqlclient = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 pytest = "*"
